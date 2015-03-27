@@ -1,0 +1,10 @@
+USAGE:
+  export LINUX_DEFCONFIG=bcm2709_defconfig # for raspberrypi2
+  rpi-build use[stdlib] rpi_linux menuconfig
+  rpi-build use[stdlib] rpi_linux diffconfig
+  rpi-build use[stdlib] rpi_linux build
+
+  export SSHIP=
+  export SSHPASS= # optional, default=ssh
+  export SSHUSER= # optional, default=pi
+  rpi-build use[stdlib] rpi_linux install
